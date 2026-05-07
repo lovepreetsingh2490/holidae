@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holidae | Book now</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Holidae</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Packages</a>
+        <a href="package.html">Featured Package</a>
+        <a class="active" href="contact.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container form-wrap">
+        <p class="eyebrow">Book now</p>
+        <h1 class="page-title">Send a quick enquiry.</h1>
+        <form id="trip-form" class="contact-form">
+          <label>
+            Name
+            <input id="name" type="text" required>
+          </label>
+          <label>
+            Email
+            <input id="email" type="email" required>
+          </label>
+            <label>
+            Package
+            <select id="destination">
+              <option>Coral Bay Escape</option>
+              <option>Metro Arc City Break</option>
+              <option>Alpine Vale Retreat</option>
+              <option>Italy</option>
+              <option>France</option>
+              <option>Maldives</option>
+              <option>London</option>
+              <option>Spain</option>
+              <option>Greece</option>
+              <option>Turkey</option>
+              <option>Dubai</option>
+              <option>Thailand</option>
+              <option>Japan</option>
+              <option>Bali</option>
+              <option>Switzerland</option>
+              <option>New York</option>
+              <option>Singapore</option>
+              <option>Portugal</option>
+              <option>Croatia</option>
+              <option>Egypt</option>
+              <option>Canada</option>
+              <option>Australia</option>
+              <option>Iceland</option>
+            </select>
+          </label>
+          <label>
+            Nights
+            <input id="nights" type="range" min="2" max="14" value="5">
+          </label>
+          <p class="estimate">Trip length: <span id="nights-value">5</span> nights</p>
+          <button class="button button-primary" type="submit">Send enquiry</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Thanks for browsing Holidae.</p>
+      <p><a href="index.html">Back to home</a></p>
+    </div>
+  </footer>
+</body>
+</html>
